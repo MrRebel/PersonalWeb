@@ -9,18 +9,36 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+
+<style>
+  .jumbotron.projects{
+    background: url(Projects.png) no-repeat center center; 
+    background-size: cover;
+    max-height: 50%;  /* Fallback for browsers do NOT support vh unit */
+    max-height: 75vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+    filter: sepia(10%) grayscale(75%);
+  }
+  .jumbotron:hover{
+    filter: sepia(0%) grayscale(0%);
+  }
+</style>
+
+<img src="WHCwhiteback.png" class="mx-auto d-block" style="width: 99%; margin: 1%; max-width: 1000px"> 
+
  <!-- Here is the Navigation bar -->
-  <nav class="navbar navbar-expand-sm bg-info navbar-dark">
-    <!-- Brand/logo -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-white flex-nowrap" style="margin-top: 0px">
+    <!-- Brand/logo
     <a class="navbar-brand" href="#"><img src=WHC.png alt="William H. Christensen"
-      style="width:100%;max-width:200px"></a>
+      style="width:100%;max-width:200px"></a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-     <ul class="navbar-nav">
+    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar" >
+     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
         <a class="nav-link" href="#">Projects</a>
       </li>
@@ -39,60 +57,40 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Technical Work/Skills</a>
       </li>
-    </ul>
-   </div>
+     </ul>
+    </div>
   </nav>
-
-<!-- Put image carousel here-->
-<div class="container mt-3">
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ul>
-
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="PrinterWork.jpg" alt="PrinterWork" height="500;max-height:500">
-    </div>
-    <div class="carousel-item">
-      <img src="WHCwhiteback.png" alt="Logo"  height="500;max-height:500">
-    </div>
-    <div class="carousel-item">
-      <img src="PrinterWork.jpg" alt="PrinterWork"  height="500;max-height:500">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
-</div>
 <!-- Begin main text and info-->
 
   <div id="Projects" class="container-fluid">
     <h3>
       Projects
     </h3>
-    <h4>MonoColor</h4>
-    <h4>H-bot</h4>
+    <h5>Monocolor Messageboard</h5>
+    <p>
+      Message board designed for displaying scrolling text that could be customized by via an Internet control
+    </p>
+    <h5>H-bot</h5>
     <p>
 
     </p>
 
   </div>
-  <div id="Research" class="container-fluid">
-    <h3>
-      Research
-    </h3>
+  <div class="row">
+    <div class="jumbotron col-sm-6 projects btn btn-light btn-lg btn-block center" href="#Biography" role="button">
+      <div id="Research" class="container-fluid">
+        <h2>
+          Research
+        </h2>
+      </div>
+    </div>
+    <div class="jumbotron col-sm-6" style="max-height: 50%; max-height: 50vh;">
+      <div id="Research" class="container-fluid">
+        <h2>
+
+        </h2>
+      </div>
+    </div>
   </div>
   <div id="Classwork" class="container-fluid">
     <h3>
@@ -106,9 +104,9 @@
   </div>
   <div id="Biography" class="container-fluid">
     <h3>Biography</h3>
-    <p>William H. Christensen is a Computer Engineering student at Union College
-       set to graduate in 2020.
-    </p>
+    <p>Hi, my name is William H. Christensen</p>
+    <br>
+    <p></p>
   </div>
   <div id="Technical_Skills" class="container-fluid">
     <h3>
