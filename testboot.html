@@ -11,8 +11,23 @@
 </head>
 
 <style>
+  .jumbotron{
+    margin-top: 0px
+    margin-bottom: 0px
+  }
+
   .jumbotron.projects{
-    background: url(Projects.png) no-repeat center center; 
+    background: url(Projects.png) no-repeat center center;
+    background-size: cover;
+    max-height: 50%;  /* Fallback for browsers do NOT support vh unit */
+    max-height: 75vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+    filter: sepia(10%) grayscale(75%);
+  }
+  .jumbotron.research{
+    background: url(BoxBotFinal.jpg) no-repeat center center;
     background-size: cover;
     max-height: 50%;  /* Fallback for browsers do NOT support vh unit */
     max-height: 75vh; /* These two lines are counted as one :-)       */
@@ -26,7 +41,7 @@
   }
 </style>
 
-<img src="WHCwhiteback.png" class="mx-auto d-block" style="width: 99%; margin: 1%; max-width: 1000px"> 
+<img src="WHCwhiteback.png" class="mx-auto d-block" style="width: 99%; margin: 1%; max-width: 1000px">
 
  <!-- Here is the Navigation bar -->
   <nav class="navbar navbar-expand-sm navbar-light bg-white flex-nowrap" style="margin-top: 0px">
@@ -62,29 +77,31 @@
   </nav>
 <!-- Begin main text and info-->
 
-  <div id="Projects" class="container-fluid">
-    <h3>
-      Projects
-    </h3>
-    <h5>Monocolor Messageboard</h5>
-    <p>
-      Message board designed for displaying scrolling text that could be customized by via an Internet control
-    </p>
-    <h5>H-bot</h5>
-    <p>
+<div class="row">
+  <div class="jumbotron jumbotron-fluid col-sm-6" style="max-height: 50%; max-height: 50vh;">
+    <div id="Research" class="container-fluid">
+      <h2>
 
-    </p>
-
+      </h2>
+    </div>
   </div>
+  <a href="https://www.wikipedia.org" class="jumbotron jumbotron-fluid col-sm-6 research btn btn-dark btn-lg btn-block center" role="button">
+    <div id="Projects" class="container-fluid">
+      <h2>
+        Projects
+      </h2>
+    </div>
+  </a>
+</div>
   <div class="row">
-    <div class="jumbotron col-sm-6 projects btn btn-light btn-lg btn-block center" href="#Biography" role="button">
+    <a href="https://www.wikipedia.org" class="jumbotron jumbotron-fluid col-sm-6 projects btn btn-light btn-lg btn-block center" role="button">
       <div id="Research" class="container-fluid">
         <h2>
           Research
         </h2>
       </div>
-    </div>
-    <div class="jumbotron col-sm-6" style="max-height: 50%; max-height: 50vh;">
+    </a>
+    <div class="jumbotron jumbotron-fluid col-sm-6" style="max-height: 50%; max-height: 50vh;">
       <div id="Research" class="container-fluid">
         <h2>
 
