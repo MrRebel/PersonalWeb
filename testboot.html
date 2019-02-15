@@ -1,136 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>William H. Christensen</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-</head>
+  <head>
+    <title>William H. Christensen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </head>
 
-<style>
-  .jumbotron{
-    margin-top: 0px
-    margin-bottom: 0px
-  }
+  <style>
+    .jumbotron{
+      margin-top: 0px
+      margin-bottom: 0px
+    }
 
-  .jumbotron.projects{
-    background: url(Projects.png) no-repeat center center;
-    background-size: cover;
-    max-height: 50%;  /* Fallback for browsers do NOT support vh unit */
-    max-height: 75vh; /* These two lines are counted as one :-)       */
+    .jumbotron.projects{
+      background: url(Projects.png) no-repeat center center;
+      background-size: cover;
+      max-height: 75%;  /* Fallback for browsers do NOT support vh unit */
+      max-height: 75vh; /* These two lines are counted as one :-)       */
 
-    display: flex;
-    align-items: center;
-    filter: sepia(10%) grayscale(75%);
-  }
-  .jumbotron.research{
-    background: url(BoxBotFinal.jpg) no-repeat center center;
-    background-size: cover;
-    max-height: 50%;  /* Fallback for browsers do NOT support vh unit */
-    max-height: 75vh; /* These two lines are counted as one :-)       */
+      display: flex;
+      align-items: center;
+      filter: sepia(10%) grayscale(75%);
+    }
+    .jumbotron.research{
+      background: url(BoxBotFinal.jpg) no-repeat center center;
+      background-size: cover;
+      max-height: 75%;  /* Fallback for browsers do NOT support vh unit */
+      max-height: 75vh; /* These two lines are counted as one :-)       */
 
-    display: flex;
-    align-items: center;
-    filter: sepia(10%) grayscale(75%);
-  }
-  .jumbotron:hover{
-    filter: sepia(0%) grayscale(0%);
-  }
-</style>
+      display: flex;
+      align-items: center;
+      filter: sepia(10%) grayscale(75%);
+    }
+    .jumbotron.projects:hover .jumbotron.research:hover{
+      filter: sepia(0%) grayscale(0%);
+    }
+  </style>
+  <body>
+    <img src="WHCwhiteback.png" class="mx-auto d-block" style="width: 99%; margin: 1%; max-width: 1000px">
 
-<img src="WHCwhiteback.png" class="mx-auto d-block" style="width: 99%; margin: 1%; max-width: 1000px">
-
- <!-- Here is the Navigation bar -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-white flex-nowrap" style="margin-top: 0px">
-    <!-- Brand/logo
-    <a class="navbar-brand" href="#"><img src=WHC.png alt="William H. Christensen"
-      style="width:100%;max-width:200px"></a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Links -->
-    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar" >
-     <ul class="navbar-nav mx-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Research</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Classwork</a>
-      </li>
-      <li class"nav-item">
-        <a class="nav-link" href="#">Computer Repair</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Biography">Biograpghy</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Technical Work/Skills</a>
-      </li>
-     </ul>
-    </div>
-  </nav>
-<!-- Begin main text and info-->
-
-<div class="row">
-  <div class="jumbotron jumbotron-fluid col-sm-6" style="max-height: 50%; max-height: 50vh;">
-    <div id="Research" class="container-fluid">
-      <h2>
-
-      </h2>
-    </div>
-  </div>
-  <a href="https://www.wikipedia.org" class="jumbotron jumbotron-fluid col-sm-6 research btn btn-dark btn-lg btn-block center" role="button">
-    <div id="Projects" class="container-fluid">
-      <h2>
-        Projects
-      </h2>
-    </div>
-  </a>
-</div>
-  <div class="row">
-    <a href="https://www.wikipedia.org" class="jumbotron jumbotron-fluid col-sm-6 projects btn btn-light btn-lg btn-block center" role="button">
-      <div id="Research" class="container-fluid">
-        <h2>
-          Research
-        </h2>
+     <!-- Here is the Navigation bar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-white flex-nowrap" style="margin-top: 0px">
+      <!-- Brand/logo
+      <a class="navbar-brand" href="#"><img src=WHC.png alt="William H. Christensen"
+        style="width:100%;max-width:200px"></a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Links -->
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar" >
+       <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Classwork</a>
+        </li>
+        <li class"nav-item">
+          <a class="nav-link" href="#">Computer Repair</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Biography">Biograpghy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Technical Work/Skills</a>
+        </li>
+       </ul>
       </div>
-    </a>
-    <div class="jumbotron jumbotron-fluid col-sm-6" style="max-height: 50%; max-height: 50vh;">
-      <div id="Research" class="container-fluid">
-        <h2>
+    </nav>
+    <!-- Begin main text and info-->
 
-        </h2>
+    <div class="row" style="margin-top: 0px; margin-bottom: 0px">
+      <div class="jumbotron jumbotron-fluid col-sm-6" style="max-height: 75%; max-height: 75vh;">
+        <div id="Research" class="container-fluid">
+          <h2>
+
+          </h2>
+        </div>
+      </div>
+      <a href="https://www.wikipedia.org" class="jumbotron jumbotron-fluid col-sm-6 research btn btn-dark btn-lg btn-block center" role="button">
+        <div id="Projects" class="container-fluid">
+          <h2>
+            Projects
+          </h2>
+        </div>
+      </a>
+    </div>
+    <div class="row" style="margin-top: 0px; margin-bottom: 0px">
+      <a href="https://www.wikipedia.org" class="jumbotron jumbotron-fluid col-sm-6 projects btn btn-light btn-lg btn-block center" role="button">
+        <div id="Research" class="container-fluid">
+          <h2>
+            Research
+          </h2>
+        </div>
+      </a>
+      <div class="jumbotron jumbotron-fluid col-sm-6" style="max-height: 75%; max-height: 75vh;">
+        <div id="Research" class="container-fluid">
+          <h2>
+
+          </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div id="Classwork" class="container-fluid">
-    <h3>
-      Classwork
-    </h3>
-  </div>
-  <div id="Computer_Repair" class="container-fluid">
-    <h3>
-      Computer Repair
-    </h3>
-  </div>
-  <div id="Biography" class="container-fluid">
-    <h3>Biography</h3>
-    <p>Hi, my name is William H. Christensen</p>
-    <br>
-    <p></p>
-  </div>
-  <div id="Technical_Skills" class="container-fluid">
-    <h3>
-      Technical Work/Skills
-    </h3>
-  </div>
+    <div id="Classwork" class="container-fluid">
+      <h3>
+        Classwork
+      </h3>
+    </div>
+    <div id="Computer_Repair" class="container-fluid">
+      <h3>
+        Computer Repair
+      </h3>
+    </div>
+    <div id="Biography" class="container-fluid">
+      <h3>Biography</h3>
+      <p>Hi, my name is William H. Christensen</p>
+      <br>
+      <p></p>
+    </div>
+    <div id="Technical_Skills" class="container-fluid">
+      <h3>
+        Technical Work/Skills
+      </h3>
+    </div>
 
 
-</body>
+  </body>
 </html>
